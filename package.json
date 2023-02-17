@@ -1,0 +1,64 @@
+{
+  "name": "online-cv",
+  "version": "1.0.0",
+  "description": "My online Resume",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.css' -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin img/* --out-dir dist/img",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chriscarman/online-cv.git"
+  },
+  "author": "Christoph Carman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chriscarman/online-cv/issues"
+  },
+  "homepage": "https://github.com/chriscarman/online-cv#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "cssmin": "^0.4.3",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-rev": "^4.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-usemin": "^0.3.30",
+    "htmlmin": "^0.0.7",
+    "imagemin-webp": "^5.0.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^8.0.0",
+    "onchange": "^7.1.0",
+    "rimraf": "^4.1.2",
+    "sass": "^1.58.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "boxicons": "^2.1.4",
+    "express": "^4.18.2",
+    "glightbox": "^3.2.0",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.6.3",
+    "popper.js": "^1.16.1",
+    "swiper": "^9.0.4",
+    "typed": "^4.1.2",
+    "typed.js": "^2.0.12",
+    "waypoints": "^4.0.1"
+  }
+}
